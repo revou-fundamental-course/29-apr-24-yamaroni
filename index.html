@@ -13,7 +13,7 @@
         <div class="navigation-icon"></div>
 
         <nav>
-            <button type="button" id="home-btn">Home</button>
+            <button type="button">Home</button>
             <button>Our Package</button>
             <button>Call Us</button>
         </nav>
@@ -27,15 +27,22 @@
         </header>
 
         <section class="core-content">
-            <div class="core-item"></div>
+            <div class="core-item">
+                <div class="banner-item" style="background-image: url(assets/1.jpg);"></div>
+                <div class="banner-item" style="background-image: url(assets/2.jpg);"></div>
+                <div class="banner-item" style="background-image: url(assets/3.png);"></div>
+            </div>
             <div class="core-item item-right">
                 <header>
                     <h2>Contact Us</h2>
                 </header>
 
-                <section class="item-form">
-                    <label>Username:</label><input type="text" />
-                </section>
+                <form class="item-form">
+                    <div>
+                        <label>Username:</label><input type="text" id="form-username" required />
+                    </div>
+                    <button type="button" id="send-btn">Send Form</button>
+                </form>
             </div>
         </section>
 
